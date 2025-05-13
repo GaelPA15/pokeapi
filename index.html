@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokeapi-POO</title>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<link rel="stylesheet" href="./assets/style.css">
 <body>
-    <h1>Aplicación de pokeapi</h1>
+    <div class="container">
+        <h1>Pokédex by GaelPA</h1>
+        
+        <div class="search-container">
+            <input type="text" id="pokemon-search" placeholder="Busca un Pokémon...">
+            <button id="search-btn">Buscar</button>
+        </div>
+        
+        <div class="pokedex">
+            <div class="pokemon-info">
+                <div class="pokemon-image">
+                    <img id="pokemon-img" src="" alt="Imagen de Pokémon">
+                </div>
+                <div class="pokemon-details">
+                    <h2 id="pokemon-name">Nombre</h2>
+                    <p id="pokemon-id">ID: #</p>
+                    <p id="pokemon-types">Tipo: </p>
+                    <p id="pokemon-height">Altura: </p>
+                    <p id="pokemon-weight">Peso: </p>
+                </div>
+            </div>
+            
+            <div class="pokemon-stats">
+                <h3>Estadísticas</h3>
+                <ul id="stats-list"></ul>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prev-btn">Anterior</button>
+            <button id="next-btn">Siguiente</button>
+        </div>
+    </div>
+
     <script src="./assets/main.js"></script>
 </body>
 </html>
